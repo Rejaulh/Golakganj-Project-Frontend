@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create-AWC</title>
+
+    <link rel="stylesheet" href="createawc.css">
+</head>
+<body>
+    <h1>Enter AWC Details here</h1>
+    <form action="" id="awc-form">
+        <label for="sector_name">Select your Sector Name:</label>
+        <!-- <input type="text" id="sector_name" name="sector_name" required><br><br> -->
+        <select name="sector" id="sector_name">
+            <option value="Kumarganj">Kumarganj</option>
+            <option value="Harirhat">Harirhat</option>
+            <option value="Bisondoi">Bisondoi</option>
+            <option value="Golakganj">Golakganj</option>
+            <option value="Bishkhowa">Bishkhowa</option>
+        </select><br><br>
+
+        <label for="AWC_Code">AWC Code:</label>
+        <input type="number" id="AWC_Code" name="AWC_Code" required><br><br>
+
+        <label for="AWC_Name">AWC Name:</label>
+        <input type="text" id="AWC_Name" name="AWC_Name" required><br><br>
+
+        <label for="AWW_Name">AWW Name:</label>
+        <input type="text" id="AWW_Name" name="AWW_Name" required><br><br>
+
+        <label for="AWW_Phone">AWW Phone:</label>
+        <input type="tel" id="AWW_Phone" name="AWW_Phone" required><br><br>
+
+        <label for="AWH_Name">AWH Name:</label>
+        <input type="text" id="AWH_Name" name="AWH_Name" required><br><br>
+
+        <label for="AWH_Phone">AWH Phone:</label>
+        <input type="tel" id="AWH_Phone" name="AWH_Phone" required><br><br>
+
+        <label for="AWC_Address">AWC Address:</label>
+        <input type="text" id="AWC_Address" name="AWC_Address" required><br><br>
+
+        <label for="Building_Type">Building Type:</label>
+        <!-- <input type="text" id="Building_Type" name="Building_Type" required><br><br> -->
+        <select name="sector" id="Building_Type">
+            <option value="Govt Building">Govt Building</option>
+            <option value="Private Building">Private Building</option>
+        </select><br><br>
+ 
+
+        <label for="Drinking_Water_Facility">Drinking Water Facility:</label>
+        <input type="checkbox" id="Drinking_Water_Facility" name="Drinking_Water_Facility"><br><br>
+
+        <label for="Toilet_Facility">Toilet Facility:</label>
+        <input type="checkbox" id="Toilet_Facility" name="Toilet_Facility"><br><br>
+
+        <label for="Electricity_Avaiable">Electricity Available:</label>
+        <input type="checkbox" id="Electricity_Avaiable" name="Electricity_Avaiable"><br><br>
+
+        <label for="Kitchen_Garden_Available">Kitchen Garden Available:</label>
+        <input type="checkbox" id="Kitchen_Garden_Available" name="Kitchen_Garden_Available"><br><br>
+
+        <label for="AWC_Image">Upload AWC Image:</label>
+        <input type="file" id="AWC_Image" name="AWC_Image" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <p id="response"></p>
+    <!-- <p id="contactForm"></p> -->
+
+
+    <script src="createawc.js"></script>
+</body>
+</html>

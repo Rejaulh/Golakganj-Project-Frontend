@@ -1,0 +1,208 @@
+/* Create header style */
+.header {
+    padding: 1px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 10px;
+  }
+  
+
+
+  /* create navbar style */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+   .topnav a:hover { 
+    background-color: #ddd;
+    color: black;
+  }
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  /* Search bar */
+  .topnav .search-container {
+    float: right;
+  }
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 4px;
+    font-size: 17px;
+    border: none;
+  }
+  .topnav .search-container button {
+    float: right;
+    padding: 16px 20px;
+    margin-top: 4px;
+    margin-right: 16px;
+    background: #74a0c9;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  /* @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+} */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,td{
+  padding: 10px;
+  border: 1px solid #bbb;
+  text-align: left;
+}
+th{
+  background-color: #f2f2f2;
+}
+
+
+/* create footer style */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
+
+
+  /* Contactus Style  */
+body{
+    background-color: rgb(237, 187, 241);
+}
+div.mycontainer{
+    width: 100%;
+    overflow: auto;
+}
+div.mycontainer div{
+    width: 50%;
+    float: left;
+}
+div.cdpo{
+    /* padding-left: 0%; */
+    background-color: lightcoral;
+    text-align: center;
+}
+div.sa{
+    height: 150px;
+    background-color: lightblue;
+    text-align: center;         
+}
+h1{
+    text-align: center;
+}
+
+
+/* Partition of the body style */
+/* Basic reset */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+/* Container for the two partitions */
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Left Partition */
+.left-part {
+  flex: 1; /* Takes up 50% of the container */
+  background-color: #f4f4f4; /* Light grey background */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Right Partition */
+.right-part {
+  flex: 1; /* Takes up the remaining 50% */
+  background-color: #e0e0e0; /* Slightly darker grey background */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: ce0nter;
+  text-align: center;
+}
+
+/* Optional: Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .left-part, .right-part {
+      flex: none;
+      height: 50vh; /* Half of the viewport height */
+  }
+}
+
+
+/* Image style */
+/* Slider container */
+.slider-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Slide images */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Image settings */
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
